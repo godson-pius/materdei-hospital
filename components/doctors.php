@@ -12,109 +12,31 @@
             </p>
         </div>
         <div class="doctors-slider owl-carousel owl-theme pt-45">
-            <div class="doctors-item">
-                <div class="doctors-img">
-                    <a href="doctors-details.html">
-                        <img src="assets/img/doctors/doctors-img1.png" alt="Images">
-                    </a>
-                </div>
-                <div class="content">
-                    <h3><a href="doctors-details.html">Norman Colins</a></h3>
-                    <span>Surgeon, Сardiologist </span>
-                    <ul class="social-link">
-                        <li>
-                            <a href="#" target="_blank"><i class='bx bxl-facebook'></i></a>
-                        </li>
-                        <li>
-                            <a href="#" target="_blank"><i class='bx bxl-twitter'></i></a>
-                        </li>
-                        <li>
-                            <a href="#" target="_blank"><i class='bx bxl-instagram'></i></a>
-                        </li>
-                        <li>
-                            <a href="#" target="_blank"><i class='bx bxl-linkedin'></i></a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
 
-            <div class="doctors-item">
-                <div class="doctors-img">
-                    <a href="doctors-details.html">
-                        <img src="assets/img/doctors/doctors-img2.png" alt="Images">
-                    </a>
-                </div>
-                <div class="content">
-                    <h3><a href="doctors-details.html">Dr. Peter Adlock</a></h3>
-                    <span>Orthopedics Surgeon </span>
-                    <ul class="social-link">
-                        <li>
-                            <a href="#" target="_blank"><i class='bx bxl-facebook'></i></a>
-                        </li>
-                        <li>
-                            <a href="#" target="_blank"><i class='bx bxl-twitter'></i></a>
-                        </li>
-                        <li>
-                            <a href="#" target="_blank"><i class='bx bxl-instagram'></i></a>
-                        </li>
-                        <li>
-                            <a href="#" target="_blank"><i class='bx bxl-linkedin'></i></a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
 
-            <div class="doctors-item">
+        <?php 
+            $doctors = EXECUTE_QUERY(SELECT_ALL('doctors', 'doctor_id'));
+            foreach ($doctors as $doctor) {
+                extract($doctor); ?>
+               <div class="doctors-item">
                 <div class="doctors-img">
-                    <a href="doctors-details.html">
-                        <img src="assets/img/doctors/doctors-img3.png" alt="Images">
+                    <a href="doctors-details?doc=<?= $doctor_id ?>">
+                        <img src="assets/img/doctors/doctor.png" alt="Images">
                     </a>
                 </div>
                 <div class="content">
-                    <h3><a href="doctors-details.html">Sinthy Alina</a></h3>
-                    <span>Gynecologist</span>
+                    <h3><a href="doctors-details?doc=<?= $doctor_id ?>"><?= $fullname; ?></a></h3>
+                    <span><?= $specialty; ?></span>
                     <ul class="social-link">
                         <li>
-                            <a href="#" target="_blank"><i class='bx bxl-facebook'></i></a>
-                        </li>
-                        <li>
-                            <a href="#" target="_blank"><i class='bx bxl-twitter'></i></a>
-                        </li>
-                        <li>
-                            <a href="#" target="_blank"><i class='bx bxl-instagram'></i></a>
-                        </li>
-                        <li>
-                            <a href="#" target="_blank"><i class='bx bxl-linkedin'></i></a>
+                            <a href="mailto:<?= $email; ?>" target="_blank"><?= substr($fullname, 0, 1); ?></a>
                         </li>
                     </ul>
                 </div>
             </div>
+        <?php } ?>
+        
 
-            <div class="doctors-item">
-                <div class="doctors-img">
-                    <a href="doctors-details.html">
-                        <img src="assets/img/doctors/doctors-img4.png" alt="Images">
-                    </a>
-                </div>
-                <div class="content">
-                    <h3><a href="doctors-details.html">Dr. James Alison</a></h3>
-                    <span>Neurologist</span>
-                    <ul class="social-link">
-                        <li>
-                            <a href="#" target="_blank"><i class='bx bxl-facebook'></i></a>
-                        </li>
-                        <li>
-                            <a href="#" target="_blank"><i class='bx bxl-twitter'></i></a>
-                        </li>
-                        <li>
-                            <a href="#" target="_blank"><i class='bx bxl-instagram'></i></a>
-                        </li>
-                        <li>
-                            <a href="#" target="_blank"><i class='bx bxl-linkedin'></i></a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
         </div>
     </div>
 

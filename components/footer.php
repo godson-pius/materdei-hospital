@@ -10,14 +10,13 @@
                         <li>
                             <i class='flaticon-pin'></i>
                             <div class="content">
-                                123 William St Suite 801, New York, USA
+                                <?= $venue; ?>
                             </div>
                         </li>
                         <li>
                             <i class='flaticon-phone-call'></i>
                             <div class="content">
-                                <a href="tel:+001-548-159-2491">+001-548-159-2491</a>
-                                <a href="tel:+001-548-159-2492">+001-548-159-2492</a>
+                                <a href="tel:<?= $hospital_num; ?>"><?= $num_design; ?></a>
                             </div>
                         </li>
                         <li>
@@ -41,13 +40,13 @@
                             </a>
                         </li>
                         <li>
-                            <a href="about.html" target="_blank">
+                            <a href="about" target="_blank">
                                 <i class='bx bxs-chevron-right'></i>
                                 About Us
                             </a>
                         </li>
                         <li>
-                            <a href="departments.html" target="_blank">
+                            <a href="news" target="_blank">
                                 <i class='bx bxs-chevron-right'></i>
                                 Articles
                             </a>
@@ -147,7 +146,7 @@
     <div class="container">
         <div class="copy-right-text text-center">
             <p>
-                Copyright © <?= date('Y'); ?> <?= $hospital_name; ?> | Designed by
+                Copyright © <?= date('Y'); ?> <?= $hospital_name; ?> | Developed by
                 <a href="https://worldbraintechnology.com" target="_blank">World Brain Technology Ltd</a>
             </p>
         </div>

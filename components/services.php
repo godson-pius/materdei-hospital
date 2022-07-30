@@ -13,56 +13,15 @@
             </p>
         </div>
         <div class="row pt-45">
+        
             <div class="col-lg-4 col-md-6">
                 <div class="service-card">
-                    <a href="service-details.html"><img src="assets/img/services/service-img1.jpg" alt="Images"></a>
-                    <div class="service-content">
-                        <div class="service-icon">
-                            <i class="flaticon-doctor"></i>
-                        </div>
-                        <h3><a href="service-details.html">Medical Counselling</a></h3>
-                        <div class="content">
-                            <p>We provide wide range of medical counselling by the professional doctor & therapist.</p>
-                        </div>
-                    </div>
-                    <div class="service-shape-1">
-                        <img src="assets/img/services/service-shape1.png" alt="Images">
-                    </div>
-                    <div class="service-shape-2">
-                        <img src="assets/img/services/service-shape2.png" alt="Images">
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-lg-4 col-md-6">
-                <div class="service-card">
-                    <a href="service-details.html"><img src="assets/img/services/service-img2.jpg" alt="Images"></a>
-                    <div class="service-content">
-                        <div class="service-icon">
-                            <i class="flaticon-syringe"></i>
-                        </div>
-                        <h3><a href="service-details.html">Laboratory Test</a></h3>
-                        <div class="content">
-                            <p>We provide wide range of medical counselling by the professional doctor & therapist.</p>
-                        </div>
-                    </div>
-                    <div class="service-shape-1">
-                        <img src="assets/img/services/service-shape1.png" alt="Images">
-                    </div>
-                    <div class="service-shape-2">
-                        <img src="assets/img/services/service-shape2.png" alt="Images">
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-lg-4 col-md-6">
-                <div class="service-card">
-                    <a href="service-details.html"><img src="assets/img/services/service-img3.jpg" alt="Images"></a>
+                    <a href="services"><img src="assets/img/services/service.png" alt="Images"></a>
                     <div class="service-content">
                         <div class="service-icon">
                             <i class="flaticon-male"></i>
                         </div>
-                        <h3><a href="service-details.html">Surgical Operation</a></h3>
+                        <h3><a href="services">Clinical consultations in all specialties</a></h3>
                         <div class="content">
                             <p>We provide wide range of medical counselling by the professional doctor & therapist.</p>
                         </div>
@@ -78,12 +37,12 @@
 
             <div class="col-lg-4 col-md-6">
                 <div class="service-card">
-                    <a href="service-details.html"><img src="assets/img/services/service-img4.jpg" alt="Images"></a>
+                    <a href="services"><img src="assets/img/services/service.png" alt="Images"></a>
                     <div class="service-content">
                         <div class="service-icon">
                             <i class="flaticon-stethoscope-1"></i>
                         </div>
-                        <h3><a href="service-details.html">Medical Treatment</a></h3>
+                        <h3><a href="services">Invitro fertilization</a></h3>
                         <div class="content">
                             <p>We provide wide range of medical counselling by the professional doctor & therapist.</p>
                         </div>
@@ -99,12 +58,12 @@
 
             <div class="col-lg-4 col-md-6">
                 <div class="service-card">
-                    <a href="service-details.html"><img src="assets/img/services/service-img5.jpg" alt="Images"></a>
+                    <a href="services"><img src="assets/img/services/service.png" alt="Images"></a>
                     <div class="service-content">
                         <div class="service-icon">
                             <i class="flaticon-caduceus-symbol"></i>
                         </div>
-                        <h3><a href="service-details.html">Pharmacy Service</a></h3>
+                        <h3><a href="services">Cosmetic and endoscopic surgeries</a></h3>
                         <div class="content">
                             <p>We provide wide range of medical counselling by the professional doctor & therapist.</p>
                         </div>
@@ -120,12 +79,54 @@
 
             <div class="col-lg-4 col-md-6">
                 <div class="service-card">
-                    <a href="service-details.html"><img src="assets/img/services/service-img6.jpg" alt="Images"></a>
+                    <a href="services"><img src="assets/img/services/service.png" alt="Images"></a>
                     <div class="service-content">
                         <div class="service-icon">
                             <i class="flaticon-ambulance-2"></i>
                         </div>
-                        <h3><a href="service-details.html">Emergency Service</a></h3>
+                        <h3><a href="services">Laboratory and diagnostic services</a></h3>
+                        <div class="content">
+                            <p>We provide wide range of medical counselling by the professional doctor & therapist.</p>
+                        </div>
+                    </div>
+                    <div class="service-shape-1">
+                        <img src="assets/img/services/service-shape1.png" alt="Images">
+                    </div>
+                    <div class="service-shape-2">
+                        <img src="assets/img/services/service-shape2.png" alt="Images">
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-lg-4 col-md-6">
+                <div class="service-card">
+                    <a href="services"><img src="assets/img/services/service.png" alt="Images"></a>
+                    <div class="service-content">
+                        <div class="service-icon">
+                            <i class="flaticon-ambulance-2"></i>
+                        </div>
+                        <h3><a href="services">Pharmaceutical services</a></h3>
+                        <div class="content">
+                            <p>We provide wide range of medical counselling by the professional doctor & therapist.</p>
+                        </div>
+                    </div>
+                    <div class="service-shape-1">
+                        <img src="assets/img/services/service-shape1.png" alt="Images">
+                    </div>
+                    <div class="service-shape-2">
+                        <img src="assets/img/services/service-shape2.png" alt="Images">
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-lg-4 col-md-6">
+                <div class="service-card">
+                    <a href="services"><img src="assets/img/services/service.png" alt="Images"></a>
+                    <div class="service-content">
+                        <div class="service-icon">
+                            <i class="flaticon-ambulance-2"></i>
+                        </div>
+                        <h3><a href="services">Medical consultancy services</a></h3>
                         <div class="content">
                             <p>We provide wide range of medical counselling by the professional doctor & therapist.</p>
                         </div>

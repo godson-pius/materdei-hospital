@@ -5,7 +5,7 @@ $title = "News - Mater Dei Specialist Hospital"; include('./config.php');
 <?php include('./components/header.php'); ?>
 
 <!-- Inner Banner -->
-<div class="inner-banner inner-bg4">
+<div class="inner-banner inner-bg4" style="<?= $banner; ?>">
     <div class="container">
         <div class="inner-title">
             <h3> News & Articles </h3>
@@ -43,77 +43,38 @@ $title = "News - Mater Dei Specialist Hospital"; include('./config.php');
             </p>
         </div>
         <div class="row pt-45">
-            <div class="col-lg-4 col-md-6">
-                <div class="blog-item">
-                    <div class="blog-item-img">
-                        <a href="blog-details.html">
-                            <img src="assets/img/blog/blog-img.jpg" alt="Images">
-                        </a>
-                        <div class="date">
-                            <ul>
-                                <li>16</li>
-                                <li>Sep</li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="content">
-                        <span class="topic">
-                            <a href="#">Healthcare</a>
-                        </span>
-                        <h3>
-                            <a href="blog-details.html"> Lockdowns Leads to Fewer Peo- Ple Seeking Medical Care</a>
-                        </h3>
-                    </div>
-                </div>
-            </div>
 
-            <div class="col-lg-4 col-md-6">
-                <div class="blog-item">
-                    <div class="blog-item-img">
-                        <a href="blog-details.html">
-                            <img src="assets/img/blog/blog-img2.jpg" alt="Images">
-                        </a>
-                        <div class="date">
-                            <ul>
-                                <li>18</li>
-                                <li>Sep</li>
-                            </ul>
-                        </div>
-                    </div>
+        <?php 
+        $news = EXECUTE_QUERY(SELECT_ALL('news', 'news_id'));
+        foreach ($news as $article) {
+            extract($article); ?>
+        <div class="col-lg-4 col-md-6">
+                <div class="blog-card">
+                    <a href="news-detail?news=<?= FORMAT_URL($title); ?>">
+                        <img src="assets/img/blog/news.png" alt="Images">
+                    </a>
                     <div class="content">
-                        <span class="topic">
-                            <a href="#">Medicine</a>
-                        </span>
+                        <ul>
+                            <li>
+                                <i class="flaticon-calendar-1"></i>
+                                    <?= HUMAN_DATE($created_at); ?>
+                                <span>
+                                    <a href="#">News & Article</a>
+                                </span>
+                            </li>
+                        </ul>
                         <h3>
-                            <a href="blog-details.html"> Emergency Medicine Resea- rch Course for the Doctors</a>
+                            <a href="news-detail?news=<?= FORMAT_URL($title); ?>"><?= $title; ?></a>
                         </h3>
+                        <p><?= substr($content, 0, 100); ?>...</p>
+                        <a href="news-detail?news=<?= FORMAT_URL($title); ?>" class="more-btn">
+                            Read More <i class="flaticon-right-arrow"></i>
+                        </a>
                     </div>
                 </div>
             </div>
-
-            <div class="col-lg-4 col-md-6">
-                <div class="blog-item">
-                    <div class="blog-item-img">
-                        <a href="blog-details.html">
-                            <img src="assets/img/blog/blog-img3.jpg" alt="Images">
-                        </a>
-                        <div class="date">
-                            <ul>
-                                <li>28</li>
-                                <li>Sep</li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="content">
-                        <span class="topic">
-                            <a href="#">Healthcare</a>
-                        </span>
-                        <h3>
-                            <a href="blog-details.html"> Advance Care Planning Information Session - 2020</a>
-                        </h3>
-                    </div>
-                </div>
-            </div>
+        <?php } ?>
+           
 
         </div>
     </div>

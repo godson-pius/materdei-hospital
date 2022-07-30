@@ -1,3 +1,7 @@
+<?php
+    require_once('manager/prepared/prepared.php');
+?>
+
 <!doctype html>
 <html lang="zxx">
 
@@ -58,14 +62,14 @@
                                     <div class="head-icon">
                                         <i class='bx bx-mail-send'></i>
                                     </div>
-                                    <a href="mailto:hello@<?= $site_name; ?>">hello@<?= $site_name; ?></a>
+                                    <a href="mailto:materdeispecialisthospital22@yahoo.com">materdeispecialisthospital22@yahoo.com</a>
                                 </li>
 
                                 <li>
                                     <div class="head-icon">
                                         <i class='bx bx-time-five'></i>
                                     </div>
-                                    <a href="#">Monday - Sunday: 24hrs</a>
+                                    <a href="tel:<?= $hospital_num; ?>">Monday - Sunday: 24hrs</a>
                                 </li>
                             </ul>
                         </div>
@@ -77,27 +81,27 @@
                         <div class="top-social-link">
                             <ul>
                                 <li>
-                                    <a href="#" target="_blank">
+                                    <a href="" target="_blank">
                                         <i class='bx bxl-facebook'></i>
                                     </a>
                                 </li>
                                 <li>
-                                    <a href="#" target="_blank">
+                                    <a href="" target="_blank">
                                         <i class='bx bxl-twitter'></i>
                                     </a>
                                 </li>
                                 <li>
-                                    <a href="#" target="_blank">
+                                    <a href="" target="_blank">
                                         <i class='bx bxl-youtube'></i>
                                     </a>
                                 </li>
                                 <li>
-                                    <a href="#" target="_blank">
+                                    <a href="" target="_blank">
                                         <i class='bx bxl-instagram'></i>
                                     </a>
                                 </li>
                                 <li>
-                                    <a href="#" target="_blank">
+                                    <a href="" target="_blank">
                                         <i class='bx bxl-google-plus'></i>
                                     </a>
                                 </li>
@@ -130,12 +134,12 @@
                     <div class="collapse navbar-collapse mean-menu" id="navbarSupportedContent">
                         <ul class="navbar-nav m-auto">
                             <li class="nav-item">
-                                <a href="index" class="nav-link active">
+                                <a href="index" class="nav-link <?php if ($title == 'Mater Dei - Specialist Hospital'): echo 'active'; endif; ?>">
                                     Home
                                 </a>
                             </li>
                             <li class="nav-item">
-                                <a href="about" class="nav-link">
+                                <a href="about" class="nav-link <?php if ($title == 'About - Mater Dei Specialist Hospital'): echo 'active'; endif; ?>">
                                     About
                                     <i class='bx bx-chevron-down'></i>
                                 </a>
@@ -154,33 +158,57 @@
                             </li>
 
                             <li class="nav-item">
-                                <a href="services" class="nav-link">
+                                <a href="services" class="nav-link <?php if ($title == 'Services - Mater Dei Specialist Hospital'): echo 'active'; endif; ?>">
                                     Services
                                     <i class='bx bx-chevron-down'></i>
                                 </a>
                                 <ul class="dropdown-menu">
                                     <li class="nav-item">
                                         <a href="services" class="nav-link">
-                                            Radiotherapy
+                                        Clinical consultations in all specialties
                                         </a>
                                     </li>
 
                                     <li class="nav-item">
                                         <a href="services" class="nav-link">
-                                            Surgery
+                                        Invitro fertilization
+                                        </a>
+                                    </li>
+
+                                    <li class="nav-item">
+                                        <a href="services" class="nav-link">
+                                        Cosmetic and endoscopic surgeries
+                                        </a>
+                                    </li>
+
+                                    <li class="nav-item">
+                                        <a href="services" class="nav-link">
+                                        Laboratory and diagnostic services
+                                        </a>
+                                    </li>
+
+                                    <li class="nav-item">
+                                        <a href="services" class="nav-link">
+                                        Pharmaceutical services
+                                        </a>
+                                    </li>
+
+                                    <li class="nav-item">
+                                        <a href="services" class="nav-link">
+                                        Medical consultancy services
                                         </a>
                                     </li>
                                 </ul>
                             </li>
 
                             <li class="nav-item">
-                                <a href="news" class="nav-link">
+                                <a href="news" class="nav-link <?php if ($title == 'News - Mater Dei Specialist Hospital'): echo 'active'; endif; ?>">
                                     News
                                 </a>
                             </li>
 
                             <li class="nav-item">
-                                <a href="contact" class="nav-link">
+                                <a href="contact" class="nav-link <?php if ($title == 'Contact - Mater Dei Specialist Hospital'): echo 'active'; endif; ?>">
                                     Contact
                                     <i class='bx bx-chevron-down'></i>
                                 </a>

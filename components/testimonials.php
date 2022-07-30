@@ -1,4 +1,4 @@
-<div class="testimonials-area pt-100 pb-70">
+<div class="testimonials-area pt-100 pb-70" style="<?= $banner; ?>">
     <div class="container">
         <div class="section-title text-center">
             <span>Testimonials</span>

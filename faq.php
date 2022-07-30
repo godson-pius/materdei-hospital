@@ -5,7 +5,7 @@ $title = "FAQ - Mater Dei Specialist Hospital"; include('./config.php');
 <?php include('./components/header.php'); ?>
 
 <!-- Inner Banner -->
-<div class="inner-banner inner-bg4">
+<div class="inner-banner inner-bg4" style="<?= $banner; ?>">
     <div class="container">
         <div class="inner-title">
             <h3>FAQ</h3>

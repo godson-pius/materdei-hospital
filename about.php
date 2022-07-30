@@ -5,7 +5,7 @@ $title = "About - Mater Dei Specialist Hospital"; include('./config.php');
 <?php include('./components/header.php'); ?>
 
 <!-- Inner Banner -->
-<div class="inner-banner inner-bg1">
+<div class="inner-banner inner-bg1" style="<?= $banner; ?>">
     <div class="container">
         <div class="inner-title">
             <h3>About Us</h3>
@@ -34,7 +34,7 @@ $title = "About - Mater Dei Specialist Hospital"; include('./config.php');
         <div class="row align-items-center">
             <div class="col-lg-6">
                 <div class="about-right-img">
-                    <img src="assets/img/about-img/about-img2.jpg" alt="Images">
+                    <img src="assets/img/about-img/about.png" alt="Images">
                     <div class="about-open-hours">
                         <h3>Open Hours</h3>
                         <ul>
@@ -117,7 +117,7 @@ $title = "About - Mater Dei Specialist Hospital"; include('./config.php');
 <!-- Doctors Area End -->
 
 <!-- Serve Area End -->
-<div class="serve-area ptb-100">
+<!-- <div class="serve-area ptb-100">
     <div class="container">
         <div class="section-title text-center">
             <h2>See How We Serve Our Patients</h2>
@@ -132,7 +132,7 @@ $title = "About - Mater Dei Specialist Hospital"; include('./config.php');
             <a href="https://www.youtube.com/watch?v=K4DyBUG242c" class="play-btn"><i class='bx bx-play'></i></a>
         </div>
     </div>
-</div>
+</div> -->
 <!-- Serve Area End -->
 
 <!-- Testimonials Area -->
@@ -150,7 +150,7 @@ $title = "About - Mater Dei Specialist Hospital"; include('./config.php');
                         <p>We are always at your side. We are 24 hours available for you in emergency situation.</p>
                         <div class="emergency-icon-content">
                             <i class="flaticon-24-hours-1"></i>
-                            <h3><a href="tel:+8-(123)-456-789-12">+8 (123) 456 789 12</a></h3>
+                            <h3><a href="tel:<?= $hospital_num; ?>"><?= $num_design; ?></a></h3>
                         </div>
                     </div>
                 </div>

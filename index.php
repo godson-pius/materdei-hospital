@@ -1,8 +1,7 @@
 <?php
 $title = "Mater Dei - Specialist Hospital"; include('./config.php');
+include('./components/header.php'); // Include the header.php file.
 ?>
-
-<?php include('./components/header.php'); ?>
 
 <div class="side-nav-responsive">
     <div class="container">
@@ -62,7 +61,7 @@ $title = "Mater Dei - Specialist Hospital"; include('./config.php');
                     <p>Get your appointment through online and remain safe at your home. Because your safety is our
                         first priority.</p>
                     <div class="banner-btn">
-                        <a href="appointment.html" class="appointment-btn">Request Appointment</a>
+                        <a href="appointment" class="appointment-btn">Request Appointment</a>
                     </div>
                 </div>
             </div>
@@ -70,7 +69,7 @@ $title = "Mater Dei - Specialist Hospital"; include('./config.php');
     </div>
 
     <div class="banner-img">
-        <img src="assets/img/home-one/home-one-img.png" alt="Images">
+        <img src="assets/img/logo.png" alt="Images">
     </div>
     <div class="banner-shape">
         <div class="shape1">
@@ -92,7 +91,7 @@ $title = "Mater Dei - Specialist Hospital"; include('./config.php');
                     <i class='flaticon-call'></i>
                     <div class="content">
                         <span>Get Emergency Service At 24/7</span>
-                        <h3><a href="tel:+8-(123)-456-789-12">+8 (123) 456 789 12</a></h3>
+                        <h3><a href="tel:<?= $hospital_num; ?>"><?= $num_design; ?></a></h3>
                     </div>
                 </div>
             </div>
@@ -167,7 +166,7 @@ $title = "Mater Dei - Specialist Hospital"; include('./config.php');
 <!-- Doctors Area End -->
 
 <!-- Emergency Area -->
-<div class="emergency-area ptb-100">
+<div class="emergency-area ptb-100" style="background-image: url(assets/img/emergency/emergency.png);">
     <div class="container">
         <div class="row">
             <div class="col-lg-7">
@@ -176,7 +175,7 @@ $title = "Mater Dei - Specialist Hospital"; include('./config.php');
                     <p>We are always at your side. We are 24 hours available for you in emergency situation.</p>
                     <div class="emergency-icon-content">
                         <i class="flaticon-24-hours-1"></i>
-                        <h3><a href="tel:+8-(123)-456-789-12">+8 (123) 456 789 12</a></h3>
+                        <h3><a href="tel:<?= $hospital_num; ?>"><?= $num_design; ?></a></h3>
                     </div>
                 </div>
             </div>
@@ -189,115 +188,7 @@ $title = "Mater Dei - Specialist Hospital"; include('./config.php');
 <!-- Emergency Area End -->
 
 <!-- Blog Area -->
-<div class="blog-area pt-100 pb-70">
-    <div class="container">
-        <div class="section-title text-center">
-            <h2>Our News & Articles</h2>
-            <div class="section-icon">
-                <div class="icon">
-                    <i class="flaticon-dna"></i>
-                </div>
-            </div>
-            <p>
-                We provide excellent services for your ultimate good health. Here are some articles included
-                for your better understanding that we are always keep you healthy.
-            </p>
-        </div>
-        <div class="row pt-45">
-            <div class="col-lg-4 col-md-6">
-                <div class="blog-card">
-                    <a href="blog-details.html">
-                        <img src="assets/img/blog/blog-img.jpg" alt="Images">
-                    </a>
-                    <div class="content">
-                        <ul>
-                            <li>
-                                <i class="flaticon-calendar-1"></i>
-                                August 31, 2020
-                                <span>
-                                    <a href="#">Healthcare</a>
-                                </span>
-                            </li>
-                        </ul>
-                        <h3>
-                            <a href="blog-details.html"> Lockdowns Leads to Fewer Peo - Ple Seeking Medical Care</a>
-                        </h3>
-                        <p>Victoria’s State of Emergency (SOE) measures resulted in almost 40 per cent less people prese
-                            nting to Alfred Health’s....</p>
-                        <a href="blog-details.html" class="more-btn">
-                            Read More <i class="flaticon-right-arrow"></i>
-                        </a>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-lg-4 col-md-6">
-                <div class="blog-card">
-                    <a href="blog-details.html">
-                        <img src="assets/img/blog/blog-img2.jpg" alt="Images">
-                    </a>
-                    <div class="content">
-                        <ul>
-                            <li>
-                                <i class="flaticon-calendar-1"></i>
-                                August 24, 2020
-                                <span>
-                                    <a href="#">Medicine</a>
-                                </span>
-                            </li>
-                        </ul>
-                        <h3>
-                            <a href="blog-details.html"> Emergency Medicine Research Course for the Doctors</a>
-                        </h3>
-                        <p>Victoria’s State of Emergency (SOE) measures resulted in almost 40 per cent less people prese
-                            nting to Alfred Health’s....</p>
-                        <a href="blog-details.html" class="more-btn">
-                            Read More <i class="flaticon-right-arrow"></i>
-                        </a>
-                    </div>
-                </div>
-            </div>
-            
-            <div class="col-lg-4 col-md-6">
-                <div class="blog-card">
-                    <a href="blog-details.html">
-                        <img src="assets/img/blog/blog-img2.jpg" alt="Images">
-                    </a>
-                    <div class="content">
-                        <ul>
-                            <li>
-                                <i class="flaticon-calendar-1"></i>
-                                August 24, 2020
-                                <span>
-                                    <a href="#">Medicine</a>
-                                </span>
-                            </li>
-                        </ul>
-                        <h3>
-                            <a href="blog-details.html"> Emergency Medicine Research Course for the Doctors</a>
-                        </h3>
-                        <p>Victoria’s State of Emergency (SOE) measures resulted in almost 40 per cent less people prese
-                            nting to Alfred Health’s....</p>
-                        <a href="blog-details.html" class="more-btn">
-                            Read More <i class="flaticon-right-arrow"></i>
-                        </a>
-                    </div>
-                </div>
-            </div>
-
-           
-
-            <div class="col-lg-12">
-                <div class="blog-more-btn">
-                    <a href="news" class="default-btn">Explore More</a>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="blog-shape-icon">
-        <i class="flaticon-dna"></i>
-    </div>
-</div>
+<?php include('./components/news.php'); ?>
 <!-- Blog Area End -->
 
 <!-- Testimonials Area -->

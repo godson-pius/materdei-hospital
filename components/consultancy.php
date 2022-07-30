@@ -1,3 +1,23 @@
+<?php
+    if (isset($_POST['send_c'])) {
+        $doctor = CHECK_INPUT(SANITIZE($_POST['doctor']));
+        $fullname = CHECK_INPUT(SANITIZE($_POST['fullname']));
+        $email = CHECK_INPUT(SANITIZE($_POST['email']));
+        $phone = CHECK_INPUT(SANITIZE($_POST['phone']));
+
+        $sql = "INSERT INTO consultations (fullname, email, phone, doctor) VALUES ('$fullname', '$email', '$phone', '$doctor')";
+
+        $result = VALIDATE_QUERY($sql);
+
+        if ($result) {
+            echo "<script>alert('Doctor will be notified.')</script>";
+        } else {
+            echo "<script>alert('Something went wrong')</script>";
+        }
+
+    }
+?>
+
 <div class="consultancy-area">
     <div class="container">
         <div class="row">
@@ -14,11 +34,11 @@
                     </p>
 
                     <div class="consultancy-form">
-                        <form>
+                        <form method="post" action="">
                             <div class="row">
                                 <div class="col-lg-12 col-sm-12">
                                     <div class="form-group">
-                                        <input type="text" name="name" id="name" class="form-control" required
+                                        <input type="text" name="fullname" id="name" class="form-control" required
                                             data-error="Please enter your name" placeholder="Name">
                                     </div>
                                 </div>
@@ -29,7 +49,7 @@
                                             data-error="Please enter your email" placeholder="Email">
                                     </div>
                                 </div>
-                                
+
                                 <div class="col-lg-12 col-sm-12">
                                     <div class="form-group">
                                         <input type="phone" name="phone" id="phone" class="form-control" required
@@ -39,20 +59,20 @@
 
                                 <div class="col-lg-12 col-sm-12">
                                     <div class="form-group">
-                                        <select class="form-control">
-                                            <option value="">Choose Doctor</option>
-                                            <option value="">Dr. James Adult</option>
-                                            <option value="">Dr. James Alison</option>
-                                            <option value="">Dr. Peter Adlock</option>
-                                            <option value="">Dr. Jelin Alis</option>
-                                            <option value="">Dr. Josh Taylor</option>
-                                            <option value="">Dr. Steven Smith</option>
+                                        <select class="form-control" name="doctor">
+                                            <option value="" disabled selected>Select Doctor</option>
+                                            <?php 
+                                            $doctors = EXECUTE_QUERY(SELECT_ALL('doctors', 'doctor_id'));
+                                            foreach ($doctors as $doctor) {
+                                                extract($doctor); ?>
+                                            <option value="<?= $fullname; ?>"><?= $fullname; ?></option>
+                                            <?php } ?>
                                         </select>
                                     </div>
                                 </div>
 
                                 <div class="col-lg-12 col-md-12">
-                                    <button type="submit" class="default-btn">
+                                    <button type="submit" name="send_c" class="default-btn">
                                         Get Online Consultancy
                                     </button>
                                 </div>

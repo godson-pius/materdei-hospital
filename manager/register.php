@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <title>Welly - Hospital Bootstrap Admin Dashboard</title>
+    <title>Add Administrator - Mater Dei Specialist Hospital</title>
     <!-- Favicon icon -->
     <link rel="icon" type="image/png" sizes="16x16" href="./images/favicon.png">
     <link href="./css/style.css" rel="stylesheet">
@@ -23,7 +23,7 @@
                             <div class="col-xl-12">
                                 <div class="auth-form">
 									<div class="text-center mb-3">
-										<a href="index.html"><img src="images/logo-full.png" alt=""></a>
+										<a href="index.html"><img src="../assets/img/logo.png" width="50" alt="logo"></a>
 									</div>
                                     <h4 class="text-center mb-4 text-white">Sign up your account</h4>
                                     <form action="index.html">
