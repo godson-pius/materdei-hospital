@@ -18,98 +18,68 @@
             Content body start
         ***********************************-->
 		<div class="content-body">
-		    <!-- row -->
-		    <div class="container-fluid">
+			<!-- row -->
+			<div class="container-fluid">
 
 
 
-		        <div class="row">
-		            <div class="col-xl-12">
-		                <div class="row">
-		                    <div class="col-xl-12">
-		                        <div class="card appointment-schedule">
-		                            <div class="card-header pb-0 border-0">
-		                                <h3 class="fs-20 text-black mb-0">All Appointments</h3>
+				<div class="row">
+					<div class="col-xl-12">
+						<div class="row">
+							<div class="col-xl-12">
+								<div class="card appointment-schedule">
+									<div class="card-header pb-0 border-0">
+										<h3 class="fs-20 text-black mb-0">All Appointments</h3>
 
-		                            </div>
-		                            <div class="card-body">
-		                                <div class="row">
+									</div>
+									<div class="card-body">
+										<div class="row">
 
-		                                    <div class="col-xl-6 col-xxl-12  col-md-6 height415 dz-scroll"
-		                                        id="appointment-schedule">
-		                                        <div class="d-flex pb-3 border-bottom mb-3 align-items-end">
-		                                            <div class="mr-auto">
-		                                                <p class="text-black font-w600 mb-2">Wednesday, June 3th</p>
-		                                                <ul>
-		                                                    <li><i class="las la-clock"></i>09:00 - 10:30 AM</li>
-		                                                    <li><i class="las la-user"></i>Dr. Samantha</li>
-		                                                </ul>
-		                                            </div>
-		                                            <a href="javascript:void(0)" class="text-success mr-3 mb-2">
-		                                                <i class="las la-check-circle scale5"></i>
-		                                            </a>
-		                                            <a href="javascript:void(0)" class="text-danger mb-2">
-		                                                <i class="las la-times-circle scale5"></i>
-		                                            </a>
-		                                        </div>
-		                                        <div class="d-flex pb-3 border-bottom mb-3 align-items-end">
-		                                            <div class="mr-auto">
-		                                                <p class="text-black font-w600 mb-2">Tuesday, June 16th</p>
-		                                                <ul>
-		                                                    <li><i class="las la-clock"></i>09:00 - 10:30 AM</li>
-		                                                    <li><i class="las la-user"></i>Dr. Samantha</li>
-		                                                </ul>
-		                                            </div>
-		                                            <a href="javascript:void(0)" class="text-success mr-3 mb-2">
-		                                                <i class="las la-check-circle scale5"></i>
-		                                            </a>
-		                                            <a href="javascript:void(0)" class="text-danger mb-2">
-		                                                <i class="las la-times-circle scale5"></i>
-		                                            </a>
-		                                        </div>
-		                                        <div class="d-flex pb-3 border-bottom mb-3 align-items-end">
-		                                            <div class="mr-auto">
-		                                                <p class="text-black font-w600 mb-2">Saturday, June 27th</p>
-		                                                <ul>
-		                                                    <li><i class="las la-clock"></i>09:00 - 10:30 AM</li>
-		                                                    <li><i class="las la-user"></i>Dr. Samantha</li>
-		                                                </ul>
-		                                            </div>
-		                                            <a href="javascript:void(0)" class="text-success mr-3 mb-2">
-		                                                <i class="las la-check-circle scale5"></i>
-		                                            </a>
-		                                            <a href="javascript:void(0)" class="text-danger mb-2">
-		                                                <i class="las la-times-circle scale5"></i>
-		                                            </a>
-		                                        </div>
-		                                        <div class="d-flex pb-3 border-bottom mb-3 align-items-end">
-		                                            <div class="mr-auto">
-		                                                <p class="text-black font-w600 mb-2">Wednesday, June 3th</p>
-		                                                <ul>
-		                                                    <li><i class="las la-clock"></i>09:00 - 10:30 AM</li>
-		                                                    <li><i class="las la-user"></i>Dr. Samantha</li>
-		                                                </ul>
-		                                            </div>
-		                                            <a href="javascript:void(0)" class="text-success mr-3 mb-2">
-		                                                <i class="las la-check-circle scale5"></i>
-		                                            </a>
-		                                            <a href="javascript:void(0)" class="text-danger mb-2">
-		                                                <i class="las la-times-circle scale5"></i>
-		                                            </a>
-		                                        </div>
-		                                    </div>
-		                                </div>
-		                            </div>
-		                        </div>
-		                    </div>
+											<div class="col-xl-6 col-xxl-12  col-md-6 height415 dz-scroll"
+												id="appointment-schedule">
+
+												<?php
+															$appointments = EXECUTE_QUERY(
+																SELECT_ALL('appointments', 'a_id')
+															);
+															foreach ($appointments as $appointment) {
+																extract($appointment); if ($status == "unapproved") { $styling = "bg-warning p-1 rounded shadow"; } else { $styling = "bg-success text-light p-1 rounded shadow"; };
+																 ?>
+
+														<div class="d-flex pb-3 border-bottom mb-3 align-items-end">
+															<div class="mr-auto">
+																<p class="text-black font-w600 mb-2">
+																	<?= HUMAN_DATE($booked_date) ?>
+																	<span class="<?= $styling; ?>" style="font-size: 10px;"><?= strtoupper($status); ?></span>
+																</p>
+																<ul>
+																	<li><i class="las la-user"></i><?= $doctor ?></li>
+																</ul>
+															</div>
+															<a style="cursor: pointer" id="delete_a" onClick="deleteFn(this)" data-id="<?= $a_id; ?>"
+																class="text-danger mb-2">
+																<i class="las la-times-circle scale5"></i>
+															</a>
+														</div>
+
+														<?php
+														}
+														?>
 
 
-		                </div>
-		            </div>
-		        </div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
 
 
-		    </div>
+						</div>
+					</div>
+				</div>
+
+
+			</div>
 		</div>
 		<!--**********************************
             Content body end
@@ -150,20 +120,31 @@
 		<!-- Datatable -->
 		<script src="./vendor/datatables/js/jquery.dataTables.min.js"></script>
 		<script>
-		    (function ($) {
-		        var table = $('#example5').DataTable({
-		            searching: false,
-		            paging: true,
-		            select: false,
-		            //info: false,         
-		            lengthChange: false
+			(function ($) {
+				var table = $('#example5').DataTable({
+					searching: false,
+					paging: true,
+					select: false,
+					//info: false,         
+					lengthChange: false
 
-		        });
-		        $('#example tbody').on('click', 'tr', function () {
-		            var data = table.row(this).data();
+				});
+				$('#example tbody').on('click', 'tr', function () {
+					var data = table.row(this).data();
 
-		        });
-		    })(jQuery);
+				});
+			})(jQuery);
+		</script>
+
+		<script>
+			const deleteFn = (e) => {
+				const id = e.dataset.id
+				let conf = confirm('Are you sure you want to delete this appointments?')
+
+				if (conf) {
+					window.location.href = `./delete.php?a_id=${id}`;
+				}
+			}
 		</script>
 		</body>
 

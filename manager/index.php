@@ -58,8 +58,7 @@
 										</div>
 									</div>
 									<div class="progress  rounded-0" style="height:4px;">
-										<div class="progress-bar rounded-0 bg-secondary progress-animated"
-											style="width: <?= GET_TOTAL(
+										<div class="progress-bar rounded-0 bg-secondary progress-animated" style="width: <?= GET_TOTAL(
                'appointments'
            ) ?>%; height:4px;" role="progressbar">
 											<span class="sr-only">50% Complete</span>
@@ -110,8 +109,7 @@
 										</div>
 									</div>
 									<div class="progress  rounded-0" style="height:4px;">
-										<div class="progress-bar rounded-0 bg-secondary progress-animated"
-											style="width: <?= GET_TOTAL(
+										<div class="progress-bar rounded-0 bg-secondary progress-animated" style="width: <?= GET_TOTAL(
                'consultations'
            ) ?>%; height:4px;" role="progressbar">
 											<span class="sr-only">94% Complete</span>
@@ -142,20 +140,21 @@
 																SELECT_ALL_LIMIT('appointments', 'a_id', 0, 4)
 															);
 															foreach ($appointments as $appointment) {
-																extract($appointment); ?>
+																extract($appointment); if ($status == "unapproved") { $styling = "bg-warning p-1 rounded shadow"; } else { $styling = "bg-success text-light p-1 rounded shadow"; } ?>
 
 														<div class="d-flex pb-3 border-bottom mb-3 align-items-end">
 															<div class="mr-auto">
 																<p class="text-black font-w600 mb-2">
-																	<?= HUMAN_DATE($booked_date) ?></p>
+																	<?= HUMAN_DATE($booked_date) ?>
+																	<span class="<?= $styling; ?>"
+																		style="font-size: 10px;"><?= strtoupper($status); ?></span>
+																</p>
 																<ul>
 																	<li><i class="las la-user"></i><?= $doctor ?></li>
 																</ul>
 															</div>
-															<a href="" class="text-success mr-3 mb-2">
-																<i class="las la-check-circle scale5"></i>
-															</a>
-															<a href="javascript:void(0)" class="text-danger mb-2">
+															<a style="cursor: pointer" id="delete_a" onClick="deleteFn(this)"
+																data-id="<?= $a_id; ?>" class="text-danger mb-2">
 																<i class="las la-times-circle scale5"></i>
 															</a>
 														</div>
@@ -204,14 +203,18 @@
 															<div class="mr-auto">
 																<p class="text-black font-w600 mb-2"><?= $fullname; ?></p>
 																<ul>
-																	<li><i class="las la-envelope"></i><a href="mailto:<?= $email; ?>"><?= $email; ?></a></li>
+																	<li><i class="las la-envelope"></i><a
+																			href="mailto:<?= $email; ?>"><?= $email; ?></a></li>
 																	<li><i class="las la-user"></i><?= $doctor; ?></li>
 																</ul>
 															</div>
-															<a href="javascript:void(0)" class="text-success mr-3 mb-2">
-																<i class="las la-check-circle scale5"></i>
+															<a href="mailto:<?= $email; ?>"
+																class="text-light mr-3 mb-2 p-2 bg-success rounded"
+																style="font-size: 10px;">
+																send mail
 															</a>
-															<a href="javascript:void(0)" class="text-danger mb-2">
+															<a style="cursor: pointer" id="delete_a" onClick="deleteCons(this)"
+																data-id="<?= $c_id; ?>" class="text-danger mb-2">
 																<i class="las la-times-circle scale5"></i>
 															</a>
 														</div>
@@ -283,6 +286,26 @@
 							inline: true,
 						});
 					});
+				</script>
+
+				<script>
+					const deleteFn = (e) => {
+						const id = e.dataset.id
+						let conf = confirm('Are you sure you want to delete this appointments?')
+
+						if (conf) {
+							window.location.href = `./delete.php?a_id=${id}`;
+						}
+					}
+
+					const deleteCons = (e) => {
+						const id = e.dataset.id
+						let conf = confirm('Are you sure you want to delete this consultation?')
+
+						if (conf) {
+							window.location.href = `./delete.php?c_id=${id}`;
+						}
+					}
 				</script>
 				</body>
 

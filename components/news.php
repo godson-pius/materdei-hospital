@@ -29,7 +29,7 @@
                                 <i class="flaticon-calendar-1"></i>
                                     <?= HUMAN_DATE($created_at); ?>
                                 <span>
-                                    <a href="#">News & Article</a>
+                                    <a href="news-detail?news=<?= FORMAT_URL($title); ?>">News & Article</a>
                                 </span>
                             </li>
                         </ul>

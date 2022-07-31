@@ -154,21 +154,12 @@ function SELECT_WHERE($table = null, $col = null, $data = null) {
 }
 
 //= This function is for SELECTING a specified limited data from the database
-function SELECT_LIMIT_WHERE($table = null, $col = null, $data = null, $id = null, $start = null, $end = null) {
+function SELECT_LIMIT_WHERE($table = null, $col = null, $data = null, $id, $start = null, $end = null) {
 
-    if ($table != null && $col != null && $data != null && $id != null && $order != null) {
+    if ($table != null && $col != null && $data != null && isset($start) && isset($end) && isset($id)) {
         return "SELECT * FROM $table WHERE $col = '$data' ORDER BY $id DESC LIMIT $start, $end";
     }
-    echo "<script>alert('Provide accurate arguments for SELECT_LIMIT_WHERE')</script>";
-
-    $query = "SELECT * FROM $table WHERE $col = '$data' ORDER BY id DESC LIMIT $limit";
-    $execute = mysqli_query($link, $query);
-
-    if (mysqli_num_rows($execute) > 0) {
-        return $execute;
-    } else {
-        return false;
-    }
+    echo "<script>alert('Provide accurate arguments for SELECT_WHERE_LIMIT')</script>";
 }
 
 //= This function is for getting total number of rows from the database
@@ -192,6 +183,23 @@ function GET_TOTAL($table = null) {
         return ERROR("Provide accurate argument for GET_TOTAL");
     }
 
+}
+
+function GET_TOTAL_FOR_TWO_TABLES($first, $second, $first_param, $second_param, $third_param, $id) {
+    global $link;
+
+    $query = "SELECT * FROM $first INNER JOIN $second ON $first.$first_param = $second.$second_param WHERE $first.$third_param = $id";
+    $execute = mysqli_query($link, $query);
+
+    if($execute) {
+        if ($execute) {
+            return mysqli_num_rows($execute);
+        } else {
+            return false;
+        }
+    } else {
+        return ERROR("Table called " . strtoupper($table) . " was not found for GET_TOTAL_FOR_TWO_TABLES FUNCTION!");
+    }
 }
 
 //= This function is for getting total number in a specified column from the database
@@ -403,6 +411,10 @@ function HUMAN_TIME($timestamp, $second = null) {
     
 }
 
+function HUMAN_DATE_TIME($timestamp) {
+    return date("d F, Y h:iA", strtotime($timestamp));
+}
+
 //= This function is for reducing long text strings
 function SUB_STRING($str, $length = 100) {
     return substr($str, 0, $length) . "...";
@@ -435,6 +447,17 @@ function GET_SESSION($session_name) {
         return $_SESSION[$session_name];
     }
 }
+
+// function ADD_FILE($file_name, $dir) {
+//     if (!empty($_FILES[$file_name])) {
+//         $file = sanitize($_FILES[$file_name]['name']);
+//         $file_tmp = $_FILES[$file]['tmp_name'];
+//         move_uploaded_file($file_tmp, "$dir/$file");
+//         return true;
+//     } else {
+//         return false;
+//     }
+// }
 
 //= This function is for logging out users from the application 
 function LOGOUT($url) {

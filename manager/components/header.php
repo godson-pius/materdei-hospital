@@ -1,5 +1,12 @@
 <?php
     require_once('prepared/prepared.php');
+
+    ACCESS($_SESSION['administrator'], "login");
+
+    $administrator_data = EXECUTE_QUERY(SELECT_WHERE("admins", "admin_id", $_SESSION['administrator']));
+    foreach ($administrator_data as $administrator) {
+        extract($administrator);
+    }
 ?>
 
 <!DOCTYPE html>
@@ -71,13 +78,13 @@
                             <li class="nav-item dropdown header-profile">
                                 <a class="nav-link" href="javascript:void(0)" role="button" data-toggle="dropdown">
                                     <div class="header-info">
-                                        <span class="text-black">Hello,<strong>Franklin</strong></span>
-                                        <p class="fs-12 mb-0">Super Admin</p>
+                                        <span class="text-black">Hello, <strong><?= $username; ?></strong></span>
+                                        <p class="fs-12 mb-0">Administrator</p>
                                     </div>
-                                    <img src="images/profile/17.jpg" width="20" alt="" />
+                                    <img src="../assets/img/logo.png" width="20" alt="" />
                                 </a>
                                 <div class="dropdown-menu dropdown-menu-right">
-                                    <a href="profile" class="dropdown-item ai-icon">
+                                    <a href="index" class="dropdown-item ai-icon">
                                         <svg id="icon-user1" xmlns="http://www.w3.org/2000/svg" class="text-primary"
                                             width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor"
                                             stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
