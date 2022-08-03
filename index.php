@@ -69,7 +69,7 @@ include('./components/header.php'); // Include the header.php file.
     </div>
 
     <div class="banner-img">
-        <img src="assets/img/logo.png" alt="Images">
+        <!-- <img src="assets/img/logo.png" alt="Images"> -->
     </div>
     <div class="banner-shape">
         <div class="shape1">

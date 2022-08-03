@@ -878,8 +878,8 @@ Main Banner Area
   right: 0;
   width: 100%;
   height: 100%;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(#1FA2FF), to(#00EBBA));
-  background-image: linear-gradient(#1FA2FF, #00EBBA);
+  /* background-image: -webkit-gradient(linear, left top, left bottom, from(#1FA2FF), to(#00EBBA));
+  background-image: linear-gradient(#1FA2FF, #00EBBA); */
   opacity: 0.8;
 }
 
