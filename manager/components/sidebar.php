@@ -43,6 +43,7 @@
                 </a>
                 <ul aria-expanded="false">
                     <li><a href="register">Add Administrator</a></li>
+                    <li><a href="change">Change Password</a></li>
                     <li><a href="logout">Logout</a></li>
                 </ul>
             </li>
