@@ -16,7 +16,7 @@
         
             <div class="col-lg-4 col-md-6">
                 <div class="service-card">
-                    <a href="services"><img src="assets/img/services/service.png" alt="Images"></a>
+                    <a href="services"><img src="assets/img/services/consult.png" alt="Images"></a>
                     <div class="service-content">
                         <div class="service-icon">
                             <i class="flaticon-male"></i>
@@ -58,7 +58,7 @@
 
             <div class="col-lg-4 col-md-6">
                 <div class="service-card">
-                    <a href="services"><img src="assets/img/services/service.png" alt="Images"></a>
+                    <a href="services"><img src="assets/img/services/cosmetics.png" alt="Images"></a>
                     <div class="service-content">
                         <div class="service-icon">
                             <i class="flaticon-caduceus-symbol"></i>
@@ -100,7 +100,7 @@
             
             <div class="col-lg-4 col-md-6">
                 <div class="service-card">
-                    <a href="services"><img src="assets/img/services/service.png" alt="Images"></a>
+                    <a href="services"><img src="assets/img/services/pharmacy.png" alt="Images"></a>
                     <div class="service-content">
                         <div class="service-icon">
                             <i class="flaticon-ambulance-2"></i>
@@ -121,7 +121,7 @@
             
             <div class="col-lg-4 col-md-6">
                 <div class="service-card">
-                    <a href="services"><img src="assets/img/services/service.png" alt="Images"></a>
+                    <a href="services"><img src="assets/img/services/consult.png" alt="Images"></a>
                     <div class="service-content">
                         <div class="service-icon">
                             <i class="flaticon-ambulance-2"></i>
