@@ -208,6 +208,12 @@
                             </li>
 
                             <li class="nav-item">
+                                <a href="gallery" class="nav-link <?php if ($title == 'Gallery - Mater Dei Specialist Hospital'): echo 'active'; endif; ?>">
+                                    Gallery
+                                </a>
+                            </li>
+
+                            <li class="nav-item">
                                 <a href="contact" class="nav-link <?php if ($title == 'Contact - Mater Dei Specialist Hospital'): echo 'active'; endif; ?>">
                                     Contact
                                     <i class='bx bx-chevron-down'></i>
