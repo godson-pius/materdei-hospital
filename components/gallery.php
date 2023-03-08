@@ -16,7 +16,7 @@
         
             <div class="col-lg-4 col-md-6">
                 <div class="service-card">
-                    <a href="services"><img src="assets/img/gallery/signpost.jpg" alt="Images"></a>
+                    <a href="services"><img src="assets/img/gallery/signpost.png" alt="Images"></a>
                     <div class="service-content">
                         <div class="service-icon">
                             <i class="flaticon-stethoscope-1"></i>
@@ -197,6 +197,204 @@
             <div class="col-lg-4 col-md-6">
                 <div class="service-card">
                     <a href="services"><img src="assets/img/gallery/matedeiss.jpg" alt="Images"></a>
+                    <div class="service-content">
+                        <div class="service-icon">
+                            <i class="flaticon-stethoscope-1"></i>
+                        </div>
+
+                    </div>
+                    <div class="service-shape-1">
+                        <img src="assets/img/services/service-shape1.png" alt="Images">
+                    </div>
+                    <div class="service-shape-2">
+                        <img src="assets/img/services/service-shape2.png" alt="Images">
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-lg-4 col-md-6">
+                <div class="service-card">
+                    <a href="services"><img src="assets/img/gallery/1.png" alt="Images"></a>
+                    <div class="service-content">
+                        <div class="service-icon">
+                            <i class="flaticon-stethoscope-1"></i>
+                        </div>
+
+                    </div>
+                    <div class="service-shape-1">
+                        <img src="assets/img/services/service-shape1.png" alt="Images">
+                    </div>
+                    <div class="service-shape-2">
+                        <img src="assets/img/services/service-shape2.png" alt="Images">
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6">
+                <div class="service-card">
+                    <a href="services"><img src="assets/img/gallery/2.png" alt="Images"></a>
+                    <div class="service-content">
+                        <div class="service-icon">
+                            <i class="flaticon-stethoscope-1"></i>
+                        </div>
+
+                    </div>
+                    <div class="service-shape-1">
+                        <img src="assets/img/services/service-shape1.png" alt="Images">
+                    </div>
+                    <div class="service-shape-2">
+                        <img src="assets/img/services/service-shape2.png" alt="Images">
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6">
+                <div class="service-card">
+                    <a href="services"><img src="assets/img/gallery/3.png" alt="Images"></a>
+                    <div class="service-content">
+                        <div class="service-icon">
+                            <i class="flaticon-stethoscope-1"></i>
+                        </div>
+
+                    </div>
+                    <div class="service-shape-1">
+                        <img src="assets/img/services/service-shape1.png" alt="Images">
+                    </div>
+                    <div class="service-shape-2">
+                        <img src="assets/img/services/service-shape2.png" alt="Images">
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6">
+                <div class="service-card">
+                    <a href="services"><img src="assets/img/gallery/4.png" alt="Images"></a>
+                    <div class="service-content">
+                        <div class="service-icon">
+                            <i class="flaticon-stethoscope-1"></i>
+                        </div>
+
+                    </div>
+                    <div class="service-shape-1">
+                        <img src="assets/img/services/service-shape1.png" alt="Images">
+                    </div>
+                    <div class="service-shape-2">
+                        <img src="assets/img/services/service-shape2.png" alt="Images">
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6">
+                <div class="service-card">
+                    <a href="services"><img src="assets/img/gallery/5.png" alt="Images"></a>
+                    <div class="service-content">
+                        <div class="service-icon">
+                            <i class="flaticon-stethoscope-1"></i>
+                        </div>
+
+                    </div>
+                    <div class="service-shape-1">
+                        <img src="assets/img/services/service-shape1.png" alt="Images">
+                    </div>
+                    <div class="service-shape-2">
+                        <img src="assets/img/services/service-shape2.png" alt="Images">
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6">
+                <div class="service-card">
+                    <a href="services"><img src="assets/img/gallery/6.png" alt="Images"></a>
+                    <div class="service-content">
+                        <div class="service-icon">
+                            <i class="flaticon-stethoscope-1"></i>
+                        </div>
+
+                    </div>
+                    <div class="service-shape-1">
+                        <img src="assets/img/services/service-shape1.png" alt="Images">
+                    </div>
+                    <div class="service-shape-2">
+                        <img src="assets/img/services/service-shape2.png" alt="Images">
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6">
+                <div class="service-card">
+                    <a href="services"><img src="assets/img/gallery/7.png" alt="Images"></a>
+                    <div class="service-content">
+                        <div class="service-icon">
+                            <i class="flaticon-stethoscope-1"></i>
+                        </div>
+
+                    </div>
+                    <div class="service-shape-1">
+                        <img src="assets/img/services/service-shape1.png" alt="Images">
+                    </div>
+                    <div class="service-shape-2">
+                        <img src="assets/img/services/service-shape2.png" alt="Images">
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6">
+                <div class="service-card">
+                    <a href="services"><img src="assets/img/gallery/8.png" alt="Images"></a>
+                    <div class="service-content">
+                        <div class="service-icon">
+                            <i class="flaticon-stethoscope-1"></i>
+                        </div>
+
+                    </div>
+                    <div class="service-shape-1">
+                        <img src="assets/img/services/service-shape1.png" alt="Images">
+                    </div>
+                    <div class="service-shape-2">
+                        <img src="assets/img/services/service-shape2.png" alt="Images">
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6">
+                <div class="service-card">
+                    <a href="services"><img src="assets/img/gallery/9.png" alt="Images"></a>
+                    <div class="service-content">
+                        <div class="service-icon">
+                            <i class="flaticon-stethoscope-1"></i>
+                        </div>
+
+                    </div>
+                    <div class="service-shape-1">
+                        <img src="assets/img/services/service-shape1.png" alt="Images">
+                    </div>
+                    <div class="service-shape-2">
+                        <img src="assets/img/services/service-shape2.png" alt="Images">
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6">
+                <div class="service-card">
+                    <a href="services"><img src="assets/img/gallery/10.png" alt="Images"></a>
+                    <div class="service-content">
+                        <div class="service-icon">
+                            <i class="flaticon-stethoscope-1"></i>
+                        </div>
+
+                    </div>
+                    <div class="service-shape-1">
+                        <img src="assets/img/services/service-shape1.png" alt="Images">
+                    </div>
+                    <div class="service-shape-2">
+                        <img src="assets/img/services/service-shape2.png" alt="Images">
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6">
+                <div class="service-card">
+                    <a href="services"><img src="assets/img/gallery/11.png" alt="Images"></a>
                     <div class="service-content">
                         <div class="service-icon">
                             <i class="flaticon-stethoscope-1"></i>

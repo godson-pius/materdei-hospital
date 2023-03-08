@@ -116,7 +116,7 @@
                             <img src="assets/img/logo.png" width="100" alt="Images">
                         </a>
                     </div>
-                    <p>Mater Dei Specialist Hospital is recognized by the Nigerian National Investment Promotion Council as a Pioneer Hospital in Minimal Access Surgery.</p>
+                
                     <ul class="social-link">
                         <li>
                             <a href="#" target="_blank"><i class='bx bxl-facebook'></i></a>

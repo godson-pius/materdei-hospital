@@ -42,7 +42,7 @@
                         <div class="service-icon">
                             <i class="flaticon-stethoscope-1"></i>
                         </div>
-                        <h3><a href="services">Invitro fertilization</a></h3>
+                        <h3><a href="services">Theater</a></h3>
                         <div class="content">
                             <p>We provide wide range of medical counselling by the professional doctor & therapist.</p>
                         </div>
@@ -121,7 +121,7 @@
             
             <div class="col-lg-4 col-md-6">
                 <div class="service-card">
-                    <a href="services"><img src="assets/img/services/consult.png" alt="Images"></a>
+                    <a href="services"><img src="assets/img/services/consulting.png" alt="Images"></a>
                     <div class="service-content">
                         <div class="service-icon">
                             <i class="flaticon-ambulance-2"></i>
